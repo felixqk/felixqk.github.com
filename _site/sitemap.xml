@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/categories/</loc>
+    </url>
+  
+  
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/</loc>
+    </url>
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/miscellaneous/</loc>
+    </url>
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/reviews/</loc>
+    </url>
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/</loc>
+    </url>
+  
+  
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/page2/</loc>
+    </url>
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/page3/</loc>
+    </url>
+  
+  
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/blog/jekyll/update/welcome-to-jekyll/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy9/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy8/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy7/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy6/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy5/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy4/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy2/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy15/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy14/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy13/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy12/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy11/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy10/</loc>
+    </url>
+  
+    <url>
+        <loc>http://localhost:4000/blog/dummy1/</loc>
+    </url>
+  
+  
+  
+    <url>
+        <loc>http://localhost:4000/jquery-simple-gallery/</loc>
+    </url>
+</urlset>

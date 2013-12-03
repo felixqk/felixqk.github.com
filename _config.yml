@@ -1,0 +1,27 @@
+# Site Variables
+name: 			  "Felixqk" 
+description:      "The portfolio of Qian Kun, Innovative Reactive Mobile Hacker in Singapore."
+url:              "http://felixqk.github.com" 
+# url:              "http://localhost:4000"
+blog:             "/blog"
+blog_categories:  "/blog/categories"
+blog_tags:        "/blog/tags"
+blog_rss:         "/blog/feed.xml"
+
+# Dependencies
+markdown:         rdiscount
+pygments:         true
+
+# Blog Permalinks
+permalink:        "/blog/:categories/:title/"
+
+# Blog Pagination
+paginate:         5
+paginate_path:    "/blog/page:num"
+
+# Server Info
+# exclude:          [".gitignore", "less", "CNAME", "LICENSE", "README.md"]
+# port:             4001
+
+safe: true
+lsi: false
