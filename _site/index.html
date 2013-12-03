@@ -99,7 +99,7 @@
 
         <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="#projects" id="example" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">HawkEye: Enable Mobile Worker</a></span>
+                <span><a rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">HawkEye: Enable Mobile Worker</a></span>
                 <span class="meta">Android/Java, UX/UI</span>
             </div>
             <img src="assets/images/projects/hawkeye.png" alt="Hawkeye"/>
@@ -107,7 +107,7 @@
 
         <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="#projects">VISABrowser: Mobile Wallet</a></span>
+                <span><a rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">VISABrowser: Mobile Wallet</a></span>
                 <span class="meta">Android/Java</span>
             </div>
             <img src="assets/images/projects/visabrowser.png" alt="VisaBrowser"/>
@@ -170,7 +170,8 @@
 <script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
 <script>
 $(function ()
-{ $("#example").popover({placement:'bottom'});
+{ $(".info span a").popover({placement:'bottom'});
+
 });
 </script>
 
