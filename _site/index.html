@@ -83,6 +83,7 @@
 </div>
 
 <!-- projects -->
+
 <div id="projects-page" class="content-page">
     <h1 class="page-header no-top"><i class="icon-large icon-gears"></i> Projects</h1>
 
@@ -90,7 +91,7 @@
 
         <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="#projects">ScanDelight: Mobile Commerce</a></span>
+                <span><a href="https://play.google.com/store/apps/details?id=com.singpost.scandelightandroid" target="_blank">ScanDelight: Mobile Commerce</a></span>
                 <span class="meta">Android/Java, Refactor</span>
             </div>
             <img src="assets/images/projects/scandelight.png" alt="ScanDelight"/>
@@ -98,7 +99,7 @@
 
         <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="#projects">HawkEye: Eable Mobile Worker</a></span>
+                <span><a href="#projects" id="example" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">HawkEye: Enable Mobile Worker</a></span>
                 <span class="meta">Android/Java, UX/UI</span>
             </div>
             <img src="assets/images/projects/hawkeye.png" alt="Hawkeye"/>
@@ -130,7 +131,7 @@
 
         <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="#projects">GroupCells: Mobile SNS</a></span>
+                <span><a href="https://play.google.com/store/apps/details?id=Android.GroupCells.Ui" target="_blank">GroupCells: Mobile SNS</a></span>
                 <span class="meta">Android/Java, Product Design</span>
             </div>
             <img src="assets/images/projects/groupcells.png" alt="GroupCells"/>
@@ -138,7 +139,7 @@
 
         <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="assets/project/3DCubeMenu/cubemenu-demo.html">CubeMenu: 3D Animated Menu</a></span>
+                <span><a href="assets/project/3DCubeMenu/cubemenu-demo.html" target="_blank">CubeMenu: 3D Animated Menu</a></span>
                 <span class="meta">JS/CSS3/jQMobile/PhoneGap, UX/UI</span>
             </div>
             <img src="assets/images/projects/cubemenu.png" alt="CubeMenu"/>
@@ -146,7 +147,7 @@
 
          <div class="span4 portfolio-item">
             <div class="info">
-                <span><a href="#projects">Fastacash: Mobile Homepage</a></span>
+                <span><a href="assets/project/FastaCash/homepage.html" target="_blank">Fastacash: Mobile Homepage</a></span>
                 <span class="meta">JS/HTML5/CSS3/BootStrap</span>
             </div>
             <img src="assets/images/projects/fastacash.png" alt="Fastacash"/>
@@ -163,6 +164,16 @@
     </div>
     
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+<script src="http://www.w3resource.com/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
+<script>
+$(function ()
+{ $("#example").popover({placement:'bottom'});
+});
+</script>
+
 
 
             </div>
