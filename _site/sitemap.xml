@@ -6,7 +6,7 @@
   
   
     <url>
-        <loc>http://localhost:4000/blog/categories/</loc>
+        <loc>http://felixqk.github.com/blog/categories/</loc>
     </url>
   
   
@@ -14,39 +14,25 @@
   
   
     <url>
-        <loc>http://localhost:4000/blog/</loc>
+        <loc>http://felixqk.github.com/blog/</loc>
     </url>
   
   
   
     <url>
-        <loc>http://localhost:4000/blog/miscellaneous/</loc>
+        <loc>http://felixqk.github.com/blog/miscellaneous/</loc>
     </url>
   
   
   
     <url>
-        <loc>http://localhost:4000/blog/reviews/</loc>
+        <loc>http://felixqk.github.com/blog/reviews/</loc>
     </url>
   
   
   
     <url>
-        <loc>http://localhost:4000/</loc>
-    </url>
-  
-  
-  
-  
-  
-    <url>
-        <loc>http://localhost:4000/blog/page2/</loc>
-    </url>
-  
-  
-  
-    <url>
-        <loc>http://localhost:4000/blog/page3/</loc>
+        <loc>http://felixqk.github.com/</loc>
     </url>
   
   
@@ -54,68 +40,82 @@
   
   
     <url>
-        <loc>http://localhost:4000/blog/jekyll/update/welcome-to-jekyll/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy9/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy8/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy7/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy6/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy5/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy4/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy2/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy15/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy14/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy13/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy12/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy11/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy10/</loc>
-    </url>
-  
-    <url>
-        <loc>http://localhost:4000/blog/dummy1/</loc>
+        <loc>http://felixqk.github.com/blog/page2/</loc>
     </url>
   
   
   
     <url>
-        <loc>http://localhost:4000/jquery-simple-gallery/</loc>
+        <loc>http://felixqk.github.com/blog/page3/</loc>
+    </url>
+  
+  
+  
+  
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/jekyll/update/welcome-to-jekyll/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy9/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy8/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy7/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy6/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy5/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy4/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy2/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy15/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy14/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy13/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy12/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy11/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy10/</loc>
+    </url>
+  
+    <url>
+        <loc>http://felixqk.github.com/blog/dummy1/</loc>
+    </url>
+  
+  
+  
+    <url>
+        <loc>http://felixqk.github.com/jquery-simple-gallery/</loc>
     </url>
 </urlset>
