@@ -211,7 +211,7 @@ $(function ()
 
 
 <div id="hobbies-page" class="content-page">
-    <h1 class="page-header no-top"><i class="icon-large icon-gears"></i> Hobbies</h1>
+    <h1 class="page-header no-top"><i class="icon-large icon-coffee"></i> Hobbies</h1>
     <div id="wordcloud"></div>
 </div>
 
@@ -221,9 +221,9 @@ $(function ()
     <script type="text/javascript">
       var word_list = new Array(
         // {text: "Lorem", weight: 13, link: {href: "http://www.google.com", target: "_blank"}},
-        // {text: "Lorem", weight: 13, handlers: {click: function() { } }},        
+        // {text: "Lorem", weight: 13, handlers: {click: function() { alert("it works!");} }},        
         {text: "Travel", weight: 10},
-        {text: "Photography", weight: 6.5},
+        {text: "Photography", weight: 6.5, handlers: {click: function() { alert("Testing Photography Click");} }},
         {text: "Movie", weight: 7},
         {text: "Film Making", weight: 3},
         {text: "Swimming", weight: 6},
