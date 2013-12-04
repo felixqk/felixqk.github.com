@@ -220,59 +220,128 @@ $(function ()
      <script src="/assets/js/jqcloud-1.0.4.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fancybox.js?v=2.1.5"></script>
     <link rel="stylesheet" type="text/css" href="/assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <!-- Add Thumbnail helper (this is optional) -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <script type="text/javascript" src="/assets/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>    
 
 
     <script type="text/javascript">
 
     $(document).ready(function() {
-        $(".fancybox").fancybox({
-            closeClick : true
-        });
+        // $(".fancybox").fancybox({
+        //     closeClick : true,
+        //     padding: 0,
+        //     openEffect : 'elastic',
+        //     openSpeed  : 150,
+        //     closeEffect : 'elastic',
+        //     closeSpeed  : 150
+        // });
     });
 
       var word_list = new Array(
         // {text: "Lorem", weight: 13, link: {href: "http://www.google.com", target: "_blank"}},
         // {text: "Lorem", weight: 13, handlers: {click: function() { alert("it works!");} }},        
-        {text: "Travel", weight: 10},
+        {text: "Travel", weight: 10, link: {href: "http://www.tripadvisor.com.sg/", target: "_blank"}},
         {text: "Photography", weight: 6.5, handlers: {click: function() { 
-                $.fancybox.open('assets/hobbies/travel/Banff.jpg');
+                $.fancybox.open([
+                {
+                    href : 'assets/hobbies/travel/moraine_lake_m.jpg',
+                    title : 'Moraine Lake Morning, Banff, Canadian Rockies'
+                },
+                 {
+                    href : 'assets/hobbies/travel/moraine_lake_n.jpg',
+                    title : 'Moraine Lake Noon, Banff, Canadian Rockies'
+                }               
+                    ], {
+                    padding : 0,
+                    openEffect : 'elastic',
+                    openSpeed  : 150,
+                    closeEffect : 'elastic',
+                    closeSpeed  : 150,
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }                 
+                });
             } 
         }},
-        {text: "Movie", weight: 7},
-        {text: "Film Making", weight: 3},
-        {text: "Swimming", weight: 6},
+        {text: "Movie", weight: 7, link: {href: "http://www.imdb.com/", target: "_blank"}},
+        {text: "Film Making", weight: 3, link: {href: "http://www.youtube.com/watch?v=HPQngxJ2IoA&feature=youtu.be", target: "_blank"}},
+        {text: "Swimming", weight: 6, link: {href: "http://www.swimminglessons.com.sg/jurong-west-swimming-complex.htm", target: "_blank"}},
         {text: "Piano", weight: 6},
         {text: "Animal", weight: 6.3},
         {text: "Archery", weight: 2},
         {text: "TKD", weight: 3},
         {text: "Music", weight: 9.5},
-        {text: "Snorkeling", weight: 4},
+        {text: "Snorkeling", weight: 4, handlers: {click: function() { 
+                $.fancybox.open([
+                {
+                    href : 'assets/hobbies/snorkeling/snorkeling_mayabay.jpg',
+                    title : 'Snorkeling @ Maya Bay'
+                }               
+                    ], {
+                    padding : 0,
+                    openEffect : 'elastic',
+                    openSpeed  : 150,
+                    closeEffect : 'elastic',
+                    closeSpeed  : 150,
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }                 
+                });
+            } 
+        }},
         {text: "Diving", weight: 2},
-        {text: "Startup", weight: 15},
+        {text: "Startup", weight: 15, link: {href: "http://www.google.com.sg/", target: "_blank"}},
         {text: "Gaming", weight: 5},
         {text: "Reading", weight: 5.5},
         {text: "Bowling", weight: 2},
         {text: "Drawing", weight: 3},
-        {text: "Hiking", weight: 5},
+        {text: "Hiking", weight: 5, handlers: {click: function() { 
+                $.fancybox.open([
+                {
+                    href : 'assets/hobbies/hiking/hiking_rockies.jpg',
+                    title : 'Hiking @ Canadian Rockies'
+                }               
+                    ], {
+                    padding : 0,
+                    openEffect : 'elastic',
+                    openSpeed  : 150,
+                    closeEffect : 'elastic',
+                    closeSpeed  : 150,
+                    helpers : {
+                        thumbs : {
+                            width: 75,
+                            height: 50
+                        }
+                    }                 
+                });
+            } 
+        }},
         {text: "Fishing", weight: 3},
         {text: "Philosophy", weight: 4},
         {text: "Sci-Fi", weight: 4.5},
-        {text: "Learn New Things", weight: 6},
+        {text: "Learn New Things", weight: 6, link: {href: "https://www.coursera.org/", target: "_blank"}},
         {text: "Running", weight: 4},
         {text: "Surfing", weight: 3},
-        {text: "Design", weight: 7.5},
-        {text: "Hacking", weight: 9},
+        {text: "UX Design", weight: 7.5, link: {href: "http://uxdesign.smashingmagazine.com/", target: "_blank"}},
+        {text: "Hacking", weight: 9, link: {href: "https://news.ycombinator.com/", target: "_blank"}},
         {text: "Adventure", weight: 6},
         {text: "Social", weight: 6},
-        {text: "Volunteer", weight: 3},
+        {text: "Volunteer", weight: 3, link: {href: "http://www.sgcares.org/public/other/SGCares_P_Home.aspx", target: "_blank"}},
         {text: "Art", weight: 4},
         {text: "Magic", weight: 3},
         {text: "Yoga", weight: 3},
         {text: "History", weight: 3},
         {text: "Zen", weight: 7},
         {text: "Nature", weight: 4},
-        {text: "Technology", weight: 8},
-        {text: "Basket Ball", weight: 1},
+        {text: "Technology", weight: 8, link: {href: "http://techcrunch.com/", target: "_blank"}},
+        {text: "Basketball", weight: 1},
         {text: "Canoeing", weight: 1},
         {text: "Paintballing", weight: 1},
         {text: "Skiing", weight: 1},
