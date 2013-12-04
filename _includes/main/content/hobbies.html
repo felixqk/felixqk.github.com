@@ -76,7 +76,9 @@
       $(document).ready(function() {
         $("#wordcloud").jQCloud(word_list,
             {
-              delayedMode: true
+              delayedMode: true,
+              // width: 300px,
+              // height: 371px
             }
             );
       });
@@ -86,10 +88,11 @@
     </script>
     <style type="text/css">
       #wordcloud {
-        margin: 10px 10px;
-        width: 90%;
+        margin: 0px auto;
+        width: 300px;
         height: 371px;
         border: none;
+        text-align: center ;
       }
       #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
         text-shadow: 0px 1px 1px #ccc;
