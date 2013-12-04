@@ -25,9 +25,9 @@ function getPageOnLoad() {
     var page = window.location.hash;
     switch (page) {
         case "#home":
-        case "#projects":
+        case "#portfolios":
         case "#blog":
-        case "#resume":
+        case "#hobbies":
         case "#contact":
             break;
         case "#resume-requested":

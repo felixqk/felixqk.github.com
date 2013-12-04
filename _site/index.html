@@ -8,11 +8,10 @@
     <meta name="description" content="The portfolio of Qian Kun, Innovative Reactive Mobile Hacker in Singapore.">
     
     <link href="/assets/css/main.min.css" rel="stylesheet" media="screen">
-    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/assets/js/main.js"></script>
-    <script src="http://cdn.jotfor.ms/static/jotform.js?3.1.1352"></script>
-    <script src="/assets/js/analytics.js"></script>
+
+
 </head>
 <body>
     <!-- HEADER -->
@@ -43,8 +42,8 @@
             <div class="col-md-3">
                 <ul id="main-nav" class="nav nav-pills nav-stacked">
     <li><a href="#home"><i class="icon-home"></i> Home</a></li>
-    <li><a href="#projects"><i class="icon-gears"></i> Projects</a></li>
-<!--     <li><a href="#blog"><i class="icon-comments"></i> Blog</a></li> -->
+    <li><a href="#portfolios"><i class="icon-gears"></i> Portfolios</a></li>
+    <li><a href="#hobbies"><i class="icon-coffee"></i> Hobbies</a></li>
 </ul>
             </div>
             
@@ -54,7 +53,7 @@
 <!-- home -->
 <div id="home-page" class="content-page">
     <h1 class="page-header no-top"><i class="icon-large icon-home"></i> Welcome!</h1>
-    <p class="lead">My name is Qian Kun, and this is my <a href="#projects" target="_blank">Portfolios</a> and my <a href="assets/QianKun_Resume.pdf" target="_blank">Resume</a>.</p>
+    <p class="lead">My name is Qian Kun, and this are my <a href="#portfolios" target="_blank">Portfolios</a> and my <a href="assets/QianKun_Resume.pdf" target="_blank">Resume</a>.</p>
     
     <p>I'm currently a Software Engineer in the <a href="http://www.hcltech.com/" target="_blank">Enterprice Mobility Lab, HCL Technology</a> , Singapore. I am <strong>lead Java/Android developer</strong> in designing and developing mobile <i>E-Commerce, Wallet, CRM, Task Management apps</i> for MNCs in E-commerce, Banking and Governments secters.</p>
 
@@ -82,10 +81,10 @@
     
 </div>
 
-<!-- projects -->
+<!-- portfolios -->
 
-<div id="projects-page" class="content-page">
-    <h1 class="page-header no-top"><i class="icon-large icon-gears"></i> Projects</h1>
+<div id="portfolios-page" class="content-page">
+    <h1 class="page-header no-top"><i class="icon-large icon-gears"></i> Portfolios</h1>
 
     <div class="row-fluid">
 
@@ -206,6 +205,109 @@ $(function ()
 
 });
 </script>
+
+
+<!-- hobbies-->
+
+
+<div id="hobbies-page" class="content-page">
+    <h1 class="page-header no-top"><i class="icon-large icon-gears"></i> Hobbies</h1>
+    <div id="wordcloud"></div>
+</div>
+
+
+    <link href="/assets/css/jqcloud.css" rel="stylesheet" type="text/css">
+     <script src="/assets/js/jqcloud-1.0.4.min.js"></script>
+    <script type="text/javascript">
+      var word_list = new Array(
+        // {text: "Lorem", weight: 13, link: {href: "http://www.google.com", target: "_blank"}},
+        // {text: "Lorem", weight: 13, handlers: {click: function() { } }},        
+        {text: "Travel", weight: 10},
+        {text: "Photography", weight: 6.5},
+        {text: "Movie", weight: 7},
+        {text: "Film Making", weight: 3},
+        {text: "Swimming", weight: 6},
+        {text: "Piano", weight: 6},
+        {text: "Animal", weight: 6.3},
+        {text: "Archery", weight: 2},
+        {text: "TKD", weight: 3},
+        {text: "Music", weight: 9.5},
+        {text: "Snorkeling", weight: 4},
+        {text: "Diving", weight: 2},
+        {text: "Startup", weight: 15},
+        {text: "Gaming", weight: 5},
+        {text: "Reading", weight: 5.5},
+        {text: "Bowling", weight: 2},
+        {text: "Drawing", weight: 3},
+        {text: "Hiking", weight: 5},
+        {text: "Fishing", weight: 3},
+        {text: "Philosophy", weight: 4},
+        {text: "Sci-Fi", weight: 4.5},
+        {text: "Learn New Things", weight: 6},
+        {text: "Running", weight: 4},
+        {text: "Surfing", weight: 3},
+        {text: "Design", weight: 7.5},
+        {text: "Hacking", weight: 9},
+        {text: "Adventure", weight: 6},
+        {text: "Social", weight: 6},
+        {text: "Volunteer", weight: 3},
+        {text: "Art", weight: 4},
+        {text: "Magic", weight: 3},
+        {text: "Yoga", weight: 3},
+        {text: "History", weight: 3},
+        {text: "Zen", weight: 7},
+        {text: "Nature", weight: 4},
+        {text: "Technology", weight: 8},
+        {text: "Basket Ball", weight: 1},
+        {text: "Canoeing", weight: 1},
+        {text: "Paintballing", weight: 1},
+        {text: "Skiing", weight: 1},
+        {text: "Skating", weight: 1},
+        {text: "Golfing", weight: 1},
+        {text: "Collecting", weight: 1},
+        {text: "Guitar", weight: 1},   
+        {text: "Backpacking", weight: 1},
+        {text: "Hunting", weight: 1},  
+        {text: "Dancing", weight: 1},
+        {text: "Singing", weight: 1}, 
+        {text: "Cartoon", weight: 1}, 
+        {text: "Pool", weight: 1},
+        {text: "Cooking", weight: 1}, 
+        {text: "Tennis", weight: 1},
+        {text: "Flying", weight: 1},
+        {text: "Football", weight: 1},
+        {text: "Tea", weight: 4},
+        {text: "Sculpting", weight: 1}, 
+        {text: "Badminton", weight: 1},
+        {text: "Action Figures", weight: 1},
+        {text: "Acting", weight: 1}                                      
+      );
+      $(document).ready(function() {
+        $("#wordcloud").jQCloud(word_list,
+            {
+              delayedMode: true
+            }
+            );
+      });
+        $(window).resize(function() {
+            // $("#wordcloud").jQCloud(word_list);
+        });
+    </script>
+    <style type="text/css">
+      #wordcloud {
+        margin: 10px 10px;
+        width: 90%;
+        height: 371px;
+        border: none;
+      }
+      #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
+        text-shadow: 0px 1px 1px #ccc;
+      }
+      #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
+        text-shadow: 0px 1px 1px #fff;
+      }
+    </style>
+
 
 
 

@@ -1,0 +1,100 @@
+<!-- hobbies-->
+
+
+<div id="hobbies-page" class="content-page">
+    <h1 class="page-header no-top"><i class="icon-large icon-gears"></i> Hobbies</h1>
+    <div id="wordcloud"></div>
+</div>
+
+
+    <link href="/assets/css/jqcloud.css" rel="stylesheet" type="text/css">
+     <script src="/assets/js/jqcloud-1.0.4.min.js"></script>
+    <script type="text/javascript">
+      var word_list = new Array(
+        // {text: "Lorem", weight: 13, link: {href: "http://www.google.com", target: "_blank"}},
+        // {text: "Lorem", weight: 13, handlers: {click: function() { } }},        
+        {text: "Travel", weight: 10},
+        {text: "Photography", weight: 6.5},
+        {text: "Movie", weight: 7},
+        {text: "Film Making", weight: 3},
+        {text: "Swimming", weight: 6},
+        {text: "Piano", weight: 6},
+        {text: "Animal", weight: 6.3},
+        {text: "Archery", weight: 2},
+        {text: "TKD", weight: 3},
+        {text: "Music", weight: 9.5},
+        {text: "Snorkeling", weight: 4},
+        {text: "Diving", weight: 2},
+        {text: "Startup", weight: 15},
+        {text: "Gaming", weight: 5},
+        {text: "Reading", weight: 5.5},
+        {text: "Bowling", weight: 2},
+        {text: "Drawing", weight: 3},
+        {text: "Hiking", weight: 5},
+        {text: "Fishing", weight: 3},
+        {text: "Philosophy", weight: 4},
+        {text: "Sci-Fi", weight: 4.5},
+        {text: "Learn New Things", weight: 6},
+        {text: "Running", weight: 4},
+        {text: "Surfing", weight: 3},
+        {text: "Design", weight: 7.5},
+        {text: "Hacking", weight: 9},
+        {text: "Adventure", weight: 6},
+        {text: "Social", weight: 6},
+        {text: "Volunteer", weight: 3},
+        {text: "Art", weight: 4},
+        {text: "Magic", weight: 3},
+        {text: "Yoga", weight: 3},
+        {text: "History", weight: 3},
+        {text: "Zen", weight: 7},
+        {text: "Nature", weight: 4},
+        {text: "Technology", weight: 8},
+        {text: "Basket Ball", weight: 1},
+        {text: "Canoeing", weight: 1},
+        {text: "Paintballing", weight: 1},
+        {text: "Skiing", weight: 1},
+        {text: "Skating", weight: 1},
+        {text: "Golfing", weight: 1},
+        {text: "Collecting", weight: 1},
+        {text: "Guitar", weight: 1},   
+        {text: "Backpacking", weight: 1},
+        {text: "Hunting", weight: 1},  
+        {text: "Dancing", weight: 1},
+        {text: "Singing", weight: 1}, 
+        {text: "Cartoon", weight: 1}, 
+        {text: "Pool", weight: 1},
+        {text: "Cooking", weight: 1}, 
+        {text: "Tennis", weight: 1},
+        {text: "Flying", weight: 1},
+        {text: "Football", weight: 1},
+        {text: "Tea", weight: 4},
+        {text: "Sculpting", weight: 1}, 
+        {text: "Badminton", weight: 1},
+        {text: "Action Figures", weight: 1},
+        {text: "Acting", weight: 1}                                      
+      );
+      $(document).ready(function() {
+        $("#wordcloud").jQCloud(word_list,
+            {
+              delayedMode: true
+            }
+            );
+      });
+        $(window).resize(function() {
+            // $("#wordcloud").jQCloud(word_list);
+        });
+    </script>
+    <style type="text/css">
+      #wordcloud {
+        margin: 10px 10px;
+        width: 90%;
+        height: 371px;
+        border: none;
+      }
+      #wordcloud span.w10, #wordcloud span.w9, #wordcloud span.w8, #wordcloud span.w7 {
+        text-shadow: 0px 1px 1px #ccc;
+      }
+      #wordcloud span.w3, #wordcloud span.w2, #wordcloud span.w1 {
+        text-shadow: 0px 1px 1px #fff;
+      }
+    </style>
