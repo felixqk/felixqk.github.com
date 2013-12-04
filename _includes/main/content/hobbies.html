@@ -9,12 +9,26 @@
 
     <link href="/assets/css/jqcloud.css" rel="stylesheet" type="text/css">
      <script src="/assets/js/jqcloud-1.0.4.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
     <script type="text/javascript">
+
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            closeClick : true
+        });
+    });
+
       var word_list = new Array(
         // {text: "Lorem", weight: 13, link: {href: "http://www.google.com", target: "_blank"}},
         // {text: "Lorem", weight: 13, handlers: {click: function() { alert("it works!");} }},        
         {text: "Travel", weight: 10},
-        {text: "Photography", weight: 6.5, handlers: {click: function() { alert("Testing Photography Click");} }},
+        {text: "Photography", weight: 6.5, handlers: {click: function() { 
+                $.fancybox.open('assets/hobbies/travel/Banff.jpg');
+            } 
+        }},
         {text: "Movie", weight: 7},
         {text: "Film Making", weight: 3},
         {text: "Swimming", weight: 6},
@@ -102,3 +116,5 @@
         text-shadow: 0px 1px 1px #fff;
       }
     </style>
+
+
