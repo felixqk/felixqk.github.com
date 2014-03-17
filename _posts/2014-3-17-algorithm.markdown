@@ -13,7 +13,7 @@ Solution:
 
 f(n) = f(n-1)+f(n-2)
 
-- Using recursive programming, Time Complexity around O(2^n), Space Complexity O(n) stack space
+- Using <b>Recursive Programming</b>, Time Complexity around O(2^n), Space Complexity O(n) stack space
 
 {% highlight ruby %}
 int climbStair(int n) {
@@ -23,7 +23,7 @@ int climbStair(int n) {
 }
 {% endhighlight %}
 
-- Optimization 1: Using Tail Recursion, Time Complexity O(n), Space Complexity O(1)
+- Optimization 1: Using <b>Tail Recursion</b>, Time Complexity O(n), Space Complexity O(1)
 
 {% highlight ruby %}
 int climbStair(int n, int acc1, int acc2) {
@@ -32,7 +32,20 @@ int climbStair(int n, int acc1, int acc2) {
 }
 {% endhighlight %}
 
-- Optimization 2: Using Dynamic Programming, Iterative, Time Complexity O(n), Space Complexity O(n)
+- Optimization 2: Using <b>Dynamic Programming, Recursion</b>, Time Complexity O(n), Space Complexity O(n)
+
+{% highlight ruby %}
+int[] cache = new int[n+1];
+cache[1] = 1;
+cache[2] = 2;
+int climbStair(int n) {
+	if(cache[n] != 0) return cache[n];
+	cache[n] = climbStair(n-1) + climbStair(n-2);
+	return cache[n];
+}
+{% endhighlight %}
+
+- Optimization 3: Using <b>Dynamic Programming, Iterative</b>, Time Complexity O(n), Space Complexity O(n)
 
 {% highlight ruby %}
 int climbStair(int n) {
@@ -46,7 +59,7 @@ int climbStair(int n) {
 }
 {% endhighlight %}
 
-- Optimization 3: Further Optimize on 2 -- Time Complexity O(n), Space Complexity O(1)
+- Optimization 4: Further <b>Optimize on Dynamic Programming, Iterative</b> -- Time Complexity O(n), Space Complexity O(1)
 
 {% highlight ruby %}
 int climbStair(int n) {
